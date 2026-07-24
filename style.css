@@ -473,10 +473,12 @@ img {
         display: none;
     }
 
-}
+
 
 /* hide information page for mobile*/
 
     .info-left {
         display: none;
     }
+
+}
