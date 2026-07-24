@@ -347,15 +347,15 @@ img {
 @media (max-width: 768px) {
     .hero,
     .information,
-    .thesis-content {          /* เพิ่มตัวนี้ */
+    .thesis-content {          
         flex-direction: column;
     }
 
     .hero-image,
     .info-left,
     .info-right,
-    .thesis-left,               /* เพิ่มตัวนี้ */
-    .thesis-right {              /* เพิ่มตัวนี้ */
+    .thesis-left,               
+    .thesis-right {             
         flex: 1 1 100%;
     }
 
@@ -363,7 +363,7 @@ img {
         grid-template-columns: 1fr;   /* เหลือ 1 คอลัมน์ */
         padding: 32px 24px;             /* ลด padding ซ้าย-ขวาจาก 72px */
     }
-
+/* nav bar มือถือ */
     .navbar {
         flex-direction: row;
         align-items: center;
@@ -372,8 +372,8 @@ img {
         padding: 16px;
     }
 
-    .nav-link {
-        display: none;
+    .nav-link { 
+        display: none;  /* ถ้าจอน้อยกว่า768จะไม่โชว์ลิ้งก์ desktop */
     }
 
     .nav-icons {
@@ -383,6 +383,7 @@ img {
         align-items: center;
     }
 
+    /* ปุ่มหน้้า hero ข้อความhero */
      .hero-btn {
         padding: 8px 24px;
         width: 100%;
@@ -390,6 +391,7 @@ img {
 
     .hero-text h1 {
         font-size: 32px;   /* ลดจาก 45px */
+        
     }
 
     .hero-text h3 {
@@ -411,20 +413,15 @@ img {
         font-size: 32px;   /* ลดจาก 50px */
     }
 
-    .contactus {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-    }
 
-        .info-item,
+        .info-item,  /* infomation item กับ thesis เรียงลงมาอันเดียว*/
     .thesis-item {
         flex-direction: column;
     }
 
     .info-item img,
     .thesis-item img {
-        flex: 1 1 100%;
+        flex: 1 1 100%; 
         aspect-ratio: 16/9;
     }
 
@@ -433,7 +430,7 @@ img {
         flex: 1 1 100%;
         padding-left: 0;
     }
-
+/* logo navbar mobile  ซ่อนข้อความเดสท้อป กับโลโก้*/
     .logo-text {
         display: none;
     }
@@ -442,6 +439,38 @@ img {
         display: none;
     }
 
+    /* Course Mobile */
+    .course-card img {
+        display: none;
+
+
+    }
+
+    .course-card p {
+        display: none;
+    }
+
+
+    /* Thesis เอาแค่วิดิโอ */
+    .thesis-right {
+        display: none;
+    }
+
+    .thesis-left h2,
+    .thesis-left p {
+        display: none;
+    }
+
+/* Footer mobile*/
+
+    .contactus {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .contactus a {
+        display: none;
+    }
 
 }
-
