@@ -221,3 +221,85 @@ img {
 
 /*  Thesis */
 
+.thesis {
+    display: flex;
+    padding: 32px 24px;
+    background-color: white;
+    flex-direction: column;
+}
+
+.thesis h1 {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 50px;
+    
+}
+
+.thesis-content {
+    display: flex;
+    flex-direction: row;  
+    gap: 24px;
+}
+
+
+.thesis-left {
+    flex: 0 0 60%;
+}
+
+.thesis-left video {
+    display: block;
+    width: 100%;
+}
+
+.thesis-left-text {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.thesis-left h2 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
+.thesis-left p {
+    font-size: 25px;
+    color: #363232;
+    padding-bottom: 32px;
+}
+
+.thesis-right {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.thesis-item {
+    padding: 16px;
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+}
+
+.thesis-item img {
+    flex: 0 0 35%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    
+    
+}
+
+.thesis-item-text {
+    flex: 0 0 65%;
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+
+.thesis-item--highlight {
+    background-color: #cac3c3;
+    padding: 16px;
+    
+}
