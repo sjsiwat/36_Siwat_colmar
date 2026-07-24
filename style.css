@@ -474,3 +474,9 @@ img {
     }
 
 }
+
+/* hide information page for mobile*/
+
+    .info-left {
+        display: none;
+    }
