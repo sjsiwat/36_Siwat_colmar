@@ -137,7 +137,7 @@ img {
 }
 
 .info-left p {
-    font-size: 15px;
+    font-size: 25px;
     color: #363232;
 }
 
@@ -146,4 +146,30 @@ img {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.info-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background-color: #bad7ef;
+}
+
+.info-item img {
+    flex: 0 0 35%;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    padding: 16px;
+    
+}
+
+.info-item-text {
+    flex: 0 0 65%;
+    margin-bottom: 8px;
+}
+
+.info-item--highlight {
+    background-color: #cac3c3;
+    
 }
