@@ -303,3 +303,21 @@ img {
     padding: 16px;
     
 }
+
+
+/* Footer  */
+
+.contactus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-right: 24px;
+    gap: 10px;
+
+}
+
+.contactus a {
+    text-decoration: none;
+}
