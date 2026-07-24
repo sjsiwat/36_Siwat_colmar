@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 img {
   display: block; 
 }
@@ -100,6 +108,7 @@ img {
     padding: 8px 150px;
     font-size: 20px;
     text-align: center;
+    
     
    
 }
@@ -314,10 +323,97 @@ img {
     padding-left: 24px;
     padding-top: 16px;
     padding-right: 24px;
-    gap: 10px;
+    
 
 }
 
 .contactus a {
     text-decoration: none;
+}
+
+
+/* media query */
+
+@media (max-width: 768px) {
+    .hero,
+    .information,
+    .thesis-content {          /* เพิ่มตัวนี้ */
+        flex-direction: column;
+    }
+
+    .hero-image,
+    .info-left,
+    .info-right,
+    .thesis-left,               /* เพิ่มตัวนี้ */
+    .thesis-right {              /* เพิ่มตัวนี้ */
+        flex: 1 1 100%;
+    }
+
+    .course {
+        grid-template-columns: 1fr;   /* เหลือ 1 คอลัมน์ */
+        padding: 32px 24px;             /* ลด padding ซ้าย-ขวาจาก 72px */
+    }
+
+    .navbar {
+        flex-direction: column;    /* พับ nav ทั้งก้อนเป็นแนวตั้ง แทนแค่ wrap */
+        align-items: flex-start;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .nav-link {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+     .hero-btn {
+        padding: 8px 24px;
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;   /* ลดจาก 45px */
+    }
+
+    .hero-text h3 {
+        font-size: 18px;   /* ลดจาก 25px */
+    }
+
+    .info-left h2,
+    .thesis-left h2 {
+        font-size: 28px;   /* ลดจาก 40px */
+    }
+
+    .info-left p,
+    .thesis-left p {
+        font-size: 16px;   /* ลดจาก 25px */
+    }
+
+    .course h1,
+    .thesis h1 {
+        font-size: 32px;   /* ลดจาก 50px */
+    }
+
+    .contactus {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+        .info-item,
+    .thesis-item {
+        flex-direction: column;
+    }
+
+    .info-item img,
+    .thesis-item img {
+        flex: 1 1 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .info-item-text,
+    .thesis-item-text {
+        flex: 1 1 100%;
+        padding-left: 0;
+    }
+
 }
