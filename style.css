@@ -11,7 +11,7 @@ img {
 .logo-icon {
   width: 24px;   /* กะขนาดตามสัดส่วนโลโก้ในสเปค */
   height: 32px;
-  background-color: #ccc; /* ใส่สีเทาไว้มองเห็นตำแหน่ง */
+  background-color: transparent; /* ใส่สีเทาไว้มองเห็นตำแหน่ง */
 }
 
 
@@ -50,6 +50,8 @@ img {
 
 /* MAIN  */
 
+
+/* HERO   */
 .container {
     max-width: auto;
     margin: 0;  
@@ -99,6 +101,54 @@ img {
     font-size: 20px;
     text-align: center;
     
+   
+}
+
+/* INFORMATION  */
+
+.container2 {
+    max-width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 32px 24px;
+
+}
+
+.information-image {
+    flex: 0 0 60%;
     
-    
+}
+
+.information-image img {
+    display: block;
+    width: 100%;
+}
+
+.info-left {
+    display: flex;
+    flex: 60%;
+
+}
+
+.info-left h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.info-left p {
+    font-size: 15px;
+    color: #363232;
+}
+
+.info-right {
+    display: flex;
+    flex: 40%;
+    flex-direction: column;
 }
