@@ -106,12 +106,8 @@ img {
 
 /* INFORMATION  */
 
-.container2 {
-    max-width: auto;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
+
+
 
 .information {
     display: flex;
@@ -173,3 +169,55 @@ img {
     background-color: #cac3c3;
     
 }
+
+
+/* Course   */
+
+.course {
+    display: grid;
+    padding: 32px 72px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px;
+    background-color: #d2c1c1;
+    
+
+
+}
+
+.course h1 {
+    text-align: center;
+    margin-bottom: 32px;
+    grid-column: 1 / -1; 
+    font-size: 50px;
+}
+
+
+.course-card {
+    background-color: white;
+
+
+}
+
+
+.course-card img {
+    width: 100%;
+    display: block;
+}
+
+.course-card h3 {
+    padding: 16px 16px 8px;
+}
+
+.course-card p {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+.course-card-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*  Thesis */
+
