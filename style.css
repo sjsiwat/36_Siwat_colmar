@@ -1,0 +1,48 @@
+img {
+  display: block; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo-icon {
+  width: 24px;   /* กะขนาดตามสัดส่วนโลโก้ในสเปค */
+  height: 32px;
+  background-color: #ccc; /* ใส่สีเทาไว้มองเห็นตำแหน่ง */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: #e5d7d7;
+
+}
+
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 20px;
+
+
+}
+
+.nav-link a {
+
+    text-decoration: none;
+
+}
+
+.logo-text {
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
