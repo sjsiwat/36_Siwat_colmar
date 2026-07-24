@@ -54,6 +54,16 @@ img {
 
 }
 
+.nav-icons {
+    display: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-icons img {
+    width: 24px;
+    height: 24px;
+}
 
 
 /* MAIN  */
@@ -355,16 +365,24 @@ img {
     }
 
     .navbar {
-        flex-direction: column;    /* พับ nav ทั้งก้อนเป็นแนวตั้ง แทนแค่ wrap */
-        align-items: flex-start;
-        gap: 12px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
         padding: 16px;
     }
 
     .nav-link {
-        flex-wrap: wrap;
-        width: 100%;
+        display: none;
     }
+
+    .nav-icons {
+
+        display: flex;   /* ถ้าจอน้อยกว่า768จะโชวไอคอนมือถือ */
+        gap: 16px;
+        align-items: center;
+    }
+
      .hero-btn {
         padding: 8px 24px;
         width: 100%;
@@ -416,4 +434,14 @@ img {
         padding-left: 0;
     }
 
+    .logo-text {
+        display: none;
+    }
+
+    .logo-icon {
+        display: none;
+    }
+
+
 }
+
